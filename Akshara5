@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Combined HTML, CSS, and JavaScript</title>
+  <style>
+    /* CSS styles */
+    body {
+      background-color: #f2f2f2;
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      width: 80%;
+      margin: 40px auto;
+      background-color: #fff;
+      padding: 20px;
+      border: 1px solid #ddd;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .header {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Welcome to Our Website</h1>
+    </div>
+    <p>This is a sample website created using HTML, CSS, and JavaScript.</p>
+    <button id="myButton">Click Me!</button>
+    <div id="myDiv"></div>
+
+    <script>
+      // JavaScript code
+      document.getElementById("myButton").addEventListener("click", function() {
+        document.getElementById("myDiv").innerHTML = "Button clicked!";
+      });
+    </script>
+  </div>
+</body>
+</html>
